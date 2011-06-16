@@ -6,7 +6,7 @@ This is the repository of my scripts (shell scripts and ruby) that i hack up to 
 
 destroys everything in Xcode's Derived Data Directory
 
-# tm-unmount.sh
+# tm-unmount.rb
 
 unmounts my time machine harddrive from the commandline
 
