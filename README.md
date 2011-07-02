@@ -27,3 +27,9 @@ which all pull up the relevant page.
 example:
 
 gh-open network # opens up the network view of the current git repository your in
+
+# bco.rb
+
+bco.rb [branchname] is a simple alias to the following command sequence:
+git branch [branchname]
+git checkout [branchname]
