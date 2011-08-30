@@ -6,6 +6,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 # Git
+alias bco='git checkout -b'
 alias c='git commit'
 alias ca='git commit -av'
 alias a='git add'
@@ -14,7 +15,6 @@ alias discard='git checkout --'
 alias d='git diff|mate'
 alias gd='git diff'
 # fu
-alias bco='branch-and-checkout'
 alias cdd='clear-derived-data'
 alias gh='github'
 alias utm='unmount-time-machine'
@@ -24,7 +24,7 @@ alias utm='unmount-time-machine'
 #==========================================================
 
 # Path Setup (include ~/dev/fu and postgres)
-PATH=$PATH:~/dev/fu:/Library/PostgreSQL/9.0/bin
+PATH=$PATH:~/Code/fu:/Library/PostgreSQL/9.0/bin
 
 # Set Editor
 export EDITOR='mate -w'
@@ -34,10 +34,10 @@ export EDITOR='mate -w'
 #==========================================================
 
 # Git Completion
-source .git-completion.bash
+source ~/Code/fu/git-completion.bash
 
 # Rake Task Completion (Broken?)
-complete -C ~/.rake-completion.rb -o default rake
+complete -C ~/Code/fu/rake-completion.rb -o default rake
 
 #==========================================================
 # Prompt Setup
@@ -74,3 +74,8 @@ branch_color () {
 }
 
 PS1='\[\033]0;\u@\h\007\]\u@\w\[${c_sgr0}\]\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\] : '
+
+#==========================================================
+# Prompt Setup
+#==========================================================
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
