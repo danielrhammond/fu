@@ -7,7 +7,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 # Git
 alias bco='git checkout -b'
-alias c='git commit'
+alias c='git commit -v'
 alias ca='git commit -av'
 alias a='git add'
 alias s='git status'
