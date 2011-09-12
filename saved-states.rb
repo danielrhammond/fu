@@ -9,8 +9,6 @@
 # TODO: Allow the user to exclude or include manually applications
 #
 
-end
-
 require 'optparse'
 
 options = {}
@@ -38,9 +36,9 @@ end
 
 case command
 when "save"
-  exec("cd ~/Library/Saved\ Application\ State/;tar -cvzf #{name}.tar.gz *savedState;mv #{name}.tar.gz ~/.Saved-State-Archive")
+  exec("cd ~/Library/Saved\\ Application\\ State/;tar -cvzf #{name}.tar.gz *savedState;mv #{name}.tar.gz ~/.Saved-State-Archive")
 when "recover"
-  exec("cd ~/Library/Saved\ Application\ State/;cp ~/.Saved-State-Archive/#{name}.tar.gz . ;tar -xvzf #{name}.tar.gz;rm #{name}.tar.gz")
+  exec("cd ~/Library/Saved\\ Application\\ State/;cp ~/.Saved-State-Archive/#{name}.tar.gz . ;tar -xvzf #{name}.tar.gz;rm #{name}.tar.gz")
 else
   puts opt_parser
 end
