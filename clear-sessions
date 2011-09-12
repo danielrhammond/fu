@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# This script clears out all your saved application states (Mac os lion)
+
+rm -rf ~/Library/Saved\ Application\ State/*
