@@ -14,10 +14,12 @@ alias s='git status'
 alias discard='git checkout --'
 alias d='git diff|mate'
 alias gd='git diff'
+alias g='git'
 # fu
 alias cdd='clear-derived-data'
 alias gh='github'
 alias utm='unmount-time-machine'
+alias pushie='~/Code/pushie/scripts/push.rb -d 83732695DE6B0850C69ADB37DB982B155551B2D159ECD6EE181718E8B16FF98E -m'
 
 #==========================================================
 # Environment Variables
