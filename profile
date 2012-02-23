@@ -5,6 +5,8 @@
 # General
 alias ..='cd ..'
 alias ...='cd ../..'
+# Rails
+alias r='rails'
 # Git
 alias bco='git checkout -b'
 alias c='git commit -v'
