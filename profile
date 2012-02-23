@@ -15,6 +15,7 @@ alias discard='git checkout --'
 alias d='git diff|mate'
 alias gd='git diff'
 alias g='git'
+alias upsub='git submodule init; git submodule update;'
 # fu
 alias cdd='clear-derived-data'
 alias gh='github'
