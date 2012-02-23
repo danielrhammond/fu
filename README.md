@@ -20,9 +20,9 @@ destroys everything in Xcode's Derived Data Directory
 
 ===============================================================================
 
-# gh-open.rb
+# github
 
-gh-open.rb is a simple script that pulls the github address out of your git config file for your local directory and then opens up a web browser to that page. It can optionally take any one of the following arguments:
+github is a simple script that pulls the github address out of your git config file for your local directory and then opens up a web browser to that page. It can optionally take any one of the following arguments:
 
 - commits
 - network
@@ -36,7 +36,7 @@ which all pull up the relevant page.
 
 example:
 
-gh-open network # opens up the network view of the current git repository your in
+github network # opens up the network view of the current git repository your in
 
 ===============================================================================
 
