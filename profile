@@ -7,6 +7,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 # Rails
 alias r='rails'
+alias mater='mate Gemfile app/ config/ doc/ lib/ public/ script/ test/ vendor/'
 # Git
 alias bco='git checkout -b'
 alias c='git commit -v'
