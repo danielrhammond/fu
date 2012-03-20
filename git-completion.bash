@@ -2694,6 +2694,8 @@ _gitk ()
 	__git_complete_revlist
 }
 
+complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
+	|| complete -o default -o nospace -F _git g
 complete -o bashdefault -o default -o nospace -F _git git 2>/dev/null \
 	|| complete -o default -o nospace -F _git git
 complete -o bashdefault -o default -o nospace -F _gitk gitk 2>/dev/null \
