@@ -8,6 +8,8 @@ alias ...='cd ../..'
 # Rails
 alias r='rails'
 alias mater='mate Gemfile app/ config/ doc/ lib/ public/ script/ test/ vendor/'
+# Xcode
+alias kx='killall Xc	ode'
 # Git
 alias bco='git checkout -b'
 alias c='git commit -v'
@@ -19,6 +21,8 @@ alias d='git diff|mate'
 alias gd='git diff'
 alias g='git'
 alias upsub='git submodule init; git submodule update;'
+alias gl='git log --graph --all --decorate --oneline -n 10'
+alias gll='git log --graph --all --decorate --oneline'
 # fu
 alias cdd='clear-derived-data'
 alias gh='github'
@@ -29,8 +33,8 @@ alias pushie='~/Code/pushie/scripts/push.rb -d 83732695DE6B0850C69ADB37DB982B155
 # Environment Variables
 #==========================================================
 
-# Path Setup (include ~/dev/fu and postgres)
-PATH=$PATH:~/Code/fu:/Library/PostgreSQL/9.0/bin
+# Path Setup (include ~/dev/fu and postgres and mysql)
+PATH=$PATH:~/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
 
 # Set Editor
 export EDITOR='mate -w'
