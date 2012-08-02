@@ -9,7 +9,7 @@ alias ...='cd ../..'
 alias r='rails'
 alias mater='mate Gemfile app/ config/ doc/ lib/ public/ script/ test/ vendor/'
 # Xcode
-alias kx='killall Xc	ode'
+alias kx='killall Xcode;killall Xcode45-DP1'
 # Git
 alias bco='git checkout -b'
 alias c='git commit -v'
