@@ -49,6 +49,10 @@ source ~/Code/fu/git-completion.bash
 # Rake Task Completion (Broken?)
 complete -C ~/Code/fu/rake-completion.rb -o default rake
 
+# z
+
+. ~/Code/fu/z/z.sh
+
 #==========================================================
 # Prompt Setup
 #==========================================================
