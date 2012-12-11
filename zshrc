@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="dh"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -34,7 +34,7 @@ plugins=(gem github)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/drh/.rvm/gems/ruby-1.9.2-p290/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/drh/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/drh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/drh/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
+export PATH=/usr/local/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/drh/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/drh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/drh/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
 
 #==========================================================
 # Aliases
@@ -74,8 +74,9 @@ alias cdd='clear-derived-data'
 export PATH=/Users/drh/.rvm/gems/ruby-1.9.2-p290/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/drh/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/drh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/drh/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-. rvm use 1.9.2
+source /Users/drh/.rvm/scripts/rvm
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+#. rvm use 1.9.2
 
 # Set Editor
 export EDITOR='mate -w'
@@ -84,7 +85,3 @@ export EDITOR='mate -w'
 . ~/Code/fu/z/z.sh
 
 # 
-
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
