@@ -59,7 +59,7 @@ alias discard='git checkout --'
 alias d='git diff|mate'
 alias gd='git diff'
 alias g='git'
-alias upsub='git submodule init; git submodule update;'
+alias upsub='git submodule update --init --recursive'
 alias gl='git log --graph --all --decorate --oneline -n 10'
 alias gll='git log --graph --all --decorate --oneline'
 # fu
@@ -85,3 +85,8 @@ export EDITOR='mate -w'
 . ~/Code/fu/z/z.sh
 
 # 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
