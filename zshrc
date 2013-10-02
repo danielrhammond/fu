@@ -33,9 +33,6 @@ plugins=(gem github)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/local/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/drh/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/drh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/drh/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
-
 #==========================================================
 # Aliases
 #==========================================================
@@ -71,7 +68,7 @@ alias cdd='clear-derived-data'
 #==========================================================
 
 # Path Setup (include ~/dev/fu and postgres and mysql)
-export PATH=/Users/drh/.rvm/gems/ruby-1.9.2-p290/bin:/Users/drh/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/drh/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/drh/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/drh/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
+export PATH=$PATH:~/code/personal/fu
 
 # RVM
 source /Users/drh/.rvm/scripts/rvm
@@ -82,11 +79,4 @@ source /Users/drh/.rvm/scripts/rvm
 export EDITOR='mate -w'
 
 # z
-. ~/Code/fu/z/z.sh
-
-# 
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+. ~/Code/personal/fu/z/z.sh
