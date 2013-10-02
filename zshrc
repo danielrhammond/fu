@@ -70,11 +70,6 @@ alias cdd='clear-derived-data'
 # Path Setup (include ~/dev/fu and postgres and mysql)
 export PATH=$PATH:~/code/personal/fu
 
-# RVM
-source /Users/drh/.rvm/scripts/rvm
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-#. rvm use 1.9.2
-
 # Set Editor
 export EDITOR='mate -w'
 
