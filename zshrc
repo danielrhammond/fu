@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem github)
+plugins=(gem git github pip virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -50,7 +50,7 @@ alias co='git checkout'
 alias bco='git checkout -b'
 alias c='git commit -v'
 alias ca='git commit -av'
-alias a='git add'
+alias a='git add --all'
 alias s='git status'
 alias discard='git checkout --'
 alias d='git diff|mate'
@@ -67,11 +67,16 @@ alias cdd='clear-derived-data'
 # Environment Variables
 #==========================================================
 
-# Path Setup (include ~/dev/fu and postgres and mysql)
-export PATH=$PATH:~/code/personal/fu
+# Path Setup (include ~/dev/fu)
+export PATH=/usr/local/bin:~/code/personal/fu:$PATH
 
 # Set Editor
 export EDITOR='mate -w'
 
 # z
 . ~/Code/personal/fu/z/z.sh
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# rbenv
+
+eval "$(rbenv init -)"
