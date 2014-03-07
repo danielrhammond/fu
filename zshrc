@@ -50,7 +50,7 @@ alias co='git checkout'
 alias bco='git checkout -b'
 alias c='git commit -v'
 alias ca='git commit -av'
-alias a='git add'
+alias a='git add --all'
 alias s='git status'
 alias discard='git checkout --'
 alias d='git diff|mate'
@@ -68,10 +68,24 @@ alias cdd='clear-derived-data'
 #==========================================================
 
 # Path Setup (include ~/dev/fu and postgres and mysql)
-export PATH=$PATH:~/code/personal/fu
+export PATH=$PATH:~/code/personal/fu:/usr/local/opt/gems/bin
 
 # Set Editor
 export EDITOR='mate -w'
 
 # z
 . ~/Code/personal/fu/z/z.sh
+
+# rbenv
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
+
+# go
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="/usr/local/Cellar/mysql/5.6.14:$PATH"
