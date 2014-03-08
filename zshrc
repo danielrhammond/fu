@@ -68,15 +68,24 @@ alias cdd='clear-derived-data'
 #==========================================================
 
 # Path Setup (include ~/dev/fu)
-export PATH=/usr/local/bin:~/code/personal/fu:$PATH
+export PATH=/usr/local/bin:~/code/personal/fu:/usr/local/opt/gems/bin:$PATH
 
 # Set Editor
 export EDITOR='mate -w'
 
 # z
 . ~/Code/personal/fu/z/z.sh
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # rbenv
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
 
-eval "$(rbenv init -)"
+# go
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="/usr/local/Cellar/mysql/5.6.14:$PATH"
