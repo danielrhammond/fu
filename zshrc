@@ -68,7 +68,7 @@ alias cdd='clear-derived-data'
 #==========================================================
 
 # Path Setup (include ~/dev/fu)
-export PATH=/usr/local/bin:~/code/personal/fu:/usr/local/opt/gems/bin:$PATH
+export PATH=/usr/local/bin:~/code/personal/fu:$HOME/.rvm/bin:/usr/local/opt/gems/bin:$PATH
 
 # Set Editor
 export EDITOR='mate -w'
@@ -80,6 +80,7 @@ export EDITOR='mate -w'
 export RBENV_ROOT="$(brew --prefix rbenv)"
 export GEM_HOME="$(brew --prefix)/opt/gems"
 export GEM_PATH="$(brew --prefix)/opt/gems"
+eval "$(rbenv init -)"
 
 # go
 export GOPATH=$HOME/code/go
