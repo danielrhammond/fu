@@ -74,7 +74,7 @@ export PATH=/usr/local/bin:~/code/personal/fu:$HOME/.rvm/bin:/usr/local/opt/gems
 export EDITOR='mate -w'
 
 # z
-. ~/Code/personal/fu/z/z.sh
+. ~/code/personal/fu/z/z.sh
 
 # rbenv
 export RBENV_ROOT="$(brew --prefix rbenv)"
