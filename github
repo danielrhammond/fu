@@ -1,16 +1,15 @@
 #!/usr/bin/env ruby
 url = nil
 if File::exists?(".git/config")
-  File.open(".git/config").each do |line| 
-	  if line.match("git@github.com:(.+).git")
-		  url = line.match("git@github.com:(.+).git")[1]
-		  break 
-	  end
+  config = File.open(".git/config").read
+  if config.match("\[remote \"origin\"\]")
+      url = /\[remote \"origin\"\].+?git@github.com:(.+?)\.git/m.match(config)[1]
   end
   if url.nil?
+      puts config
     puts "Error: Could not find github url in .git/config, Opening github.com"
     exec("open https://github.com/")
-  else 
+  else
     suffix = (ARGV.first || "")
     github_url = "https://github.com/#{url}/#{suffix}"
     puts "Opening: #{github_url}"
@@ -18,5 +17,5 @@ if File::exists?(".git/config")
   end
 else
   puts "Error: could not find git repository, Opening github.com"
-  exec("open https://github.com")  
+  exec("open https://github.com")
 end
