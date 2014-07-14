@@ -3,10 +3,12 @@ url = nil
 if File::exists?(".git/config")
   config = File.open(".git/config").read
   if config.match("\[remote \"origin\"\]")
-      url = /\[remote \"origin\"\].+?git@github.com:(.+?)\.git/m.match(config)[1]
+    origin_match = /\[remote \"origin\"\].+?git@github.com:(.+?)\.git/m.match(config)
+    if origin_match
+      url = origin_match[1]      
+    end
   end
   if url.nil?
-      puts config
     puts "Error: Could not find github url in .git/config, Opening github.com"
     exec("open https://github.com/")
   else
