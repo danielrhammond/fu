@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>CMD-R + HNEI vim nav</name>
+        <identifier>private.daniel.colemak-vi</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::COMMAND_R,
+            KeyCode::CURSOR_LEFT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::N, ModifierFlag::COMMAND_R,
+            KeyCode::CURSOR_DOWN
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::E, ModifierFlag::COMMAND_R,
+            KeyCode::CURSOR_UP
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::I, ModifierFlag::COMMAND_R,
+            KeyCode::CURSOR_RIGHT
+        </autogen>
+    </item>
+    <item>
+        <name>CMD-R + TD -> []</name>
+        <identifier>private.daniel.colemak-brackets</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::T, ModifierFlag::COMMAND_R,
+            KeyCode::BRACKET_LEFT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::D, ModifierFlag::COMMAND_R,
+            KeyCode::BRACKET_RIGHT
+        </autogen>
+    </item>
+    <item>
+        <name>L-CTRL to forward escape</name>
+        <identifier>private.daniel.ctrl-escape</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::CONTROL_L, KeyCode::ESCAPE,
+        </autogen>
+    </item>
+</root>
