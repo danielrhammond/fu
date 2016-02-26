@@ -29,9 +29,12 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem git github pip virtualenvwrapper)
+plugins=(gem git github pip)
 
 source $ZSH/oh-my-zsh.sh
+
+# http://unix.stackexchange.com/a/68943
+autoload -U zmv
 
 #==========================================================
 # Aliases
@@ -60,7 +63,7 @@ alias upsub='git submodule update --init --recursive'
 alias gl='git log --graph --all --decorate --oneline -n 10'
 alias gll='git log --graph --all --decorate --oneline'
 # fu
-alias cdd='clear-derived-data'
+alias unfuck-xcode='rm -rf ~/Library/Developer/Xcode/DerivedData ~/Library/Caches/com.apple.dt.Xcode'
 # alias gh='github'
 
 #==========================================================
@@ -77,9 +80,9 @@ export EDITOR='mate -w'
 . ~/code/personal/fu/z/z.sh
 
 # rbenv
-export RBENV_ROOT="$(brew --prefix rbenv)"
-export GEM_HOME="$(brew --prefix)/opt/gems"
-export GEM_PATH="$(brew --prefix)/opt/gems"
+#export RBENV_ROOT="$(brew --prefix rbenv)"
+#export GEM_HOME="$(brew --prefix)/opt/gems"
+#export GEM_PATH="$(brew --prefix)/opt/gems"
 eval "$(rbenv init -)"
 
 # go
