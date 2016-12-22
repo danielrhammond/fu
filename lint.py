@@ -1,1 +1,0 @@
-lint-script/lint.py
