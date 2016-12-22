@@ -37,21 +37,7 @@ alias pushie='~/Code/pushie/scripts/push.rb -d 83732695DE6B0850C69ADB37DB982B155
 PATH=$PATH:~/Code/fu:/Library/PostgreSQL/9.0/bin:/usr/local/mysql/bin
 
 # Set Editor
-export EDITOR='mate -w'
-
-#==========================================================
-# External Tools
-#==========================================================
-
-# Git Completion
-source ~/Code/fu/git-completion.bash
-
-# Rake Task Completion (Broken?)
-complete -C ~/Code/fu/rake-completion.rb -o default rake
-
-# z
-
-. ~/Code/fu/z/z.sh
+export EDITOR='subl -w'
 
 #==========================================================
 # Prompt Setup
