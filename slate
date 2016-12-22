@@ -9,10 +9,10 @@ config resizePercentOf screenSize
 alias push-full-screen push up bar-resize:screenSizeY | push right bar-resize:screenSizeX
 
 # Resize Bindings
-bind n:shift;cmd;alt   push up bar-resize:screenSizeY
-bind h:shift;cmd;alt   push left bar-resize:screenSizeX/2
-bind i:shift;cmd;alt   push right bar-resize:screenSizeX/2
-bind e:shift;cmd;alt	   throw next resize
+bind down:shift;cmd;alt    push up bar-resize:screenSizeY
+bind left:shift;cmd;alt	   push left bar-resize:screenSizeX/2
+bind right:shift;cmd;alt   push right bar-resize:screenSizeX/2
+bind up:shift;cmd;alt	   throw next resize
 
 #bind j:shift;cmd	   push left bar-resize:screenSizeX/2
 
