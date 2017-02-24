@@ -75,3 +75,6 @@ export PATH=$HOME/code/fu/bin:$PATH
 
 # Set Editor
 export EDITOR='subl -w'
+
+# added by travis gem
+[ -f /Users/daniel/.travis/travis.sh ] && source /Users/daniel/.travis/travis.sh
