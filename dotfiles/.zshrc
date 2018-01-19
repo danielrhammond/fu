@@ -27,7 +27,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -35,7 +35,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -52,9 +52,10 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/arcanist/bin:/usr/local/engtools/bin:/usr/local/munki"
+export PATH="/opt/dropbox-override/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/arcanist/bin:/usr/local/engtools/bin:/usr/local/munki"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export PATH="/Users/danielh/Library/MobileTools/buck/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,6 +68,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='code -w -n -p'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -83,6 +85,8 @@ alias unfuck-xcode="killall Xcode; rm -rf ~/Library/Developer/Xcode/DerivedData"
 alias outdent-pboard="pbpaste | sed 's/^ \{4\}//' | pbcopy"
 alias fucksophos='sudo rm /Library/Preferences/com.sophos.sav.plist || sudo "/Library/Application Support/Sophos/opm/Installer.app/Contents/MacOS/tools/InstallationDeployer" --remove'
 alias wip="git add . && git commit -am wip"
-
+alias upsub="git submodule update --recursive --init"
+alias test_chime_core="xcodebuild -workspace ChimeApps.xcworkspace -scheme \"ChimeCore Mac\" test | xcpretty"
 # Add depo_tools to path for chromium
 export PATH=$PATH:~/dev/chromium/depot_tools
+export PATH="$HOME/.fastlane/bin:$PATH"
