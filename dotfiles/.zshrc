@@ -52,10 +52,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git)
 
 # User configuration
-export PATH="/opt/dropbox-override/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/arcanist/bin:/usr/local/engtools/bin:/usr/local/munki"
-# export MANPATH="/usr/local/man:$MANPATH"
-
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/arcanist/bin:$PATH"
+export PATH="/usr/local/engtools/bin:$PATH"
 export PATH="/Users/danielh/Library/MobileTools/buck/bin:$PATH"
+export PATH="/usr/local/munki:$PATH"
+export PATH="/opt/dropbox-override/bin:$PATH"
+export PATH="/Users/danielh/dev/fu/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
